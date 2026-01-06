@@ -1,0 +1,35 @@
+let greeting: string = "Hello, World from TS!";
+let id: number = 5;
+let isAdmin: boolean = true;
+
+console.log(greeting);
+
+const user = {
+  name: "John Doe",
+  age: 30,
+  isAdmin: true,
+};
+
+console.log(user.age);
+
+// functions in TS
+function add(num: number): number {
+  return num + 1;
+}
+
+console.log(add(5));
+
+function signUpUser(name: string, email: string, isPaid: boolean) {}
+
+// example using arrow function
+let loginUser = (name: string, email: string, isPaid: boolean = false) => {};
+
+loginUser("John", "j@j.com");
+
+// might be scenarios where function returns more than one thing
+function getResult(value: number){
+  if (value > 0){
+    return true
+  }
+  return "hey"
+}
