@@ -27,9 +27,22 @@ let loginUser = (name: string, email: string, isPaid: boolean = false) => {};
 loginUser("John", "j@j.com");
 
 // might be scenarios where function returns more than one thing
-function getResult(value: number){
-  if (value > 0){
-    return true
+function getResult(value: number) {
+  if (value > 0) {
+    return true;
   }
-  return "hey"
+  return "hey";
+}
+
+// TYPE ALIAS
+type User = {
+  name: string;
+  email:string,
+  userId: number
+}
+
+// you can now use the User alias as a data type by itself
+
+function CreateUser (user:User){
+  
 }

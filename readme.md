@@ -22,3 +22,4 @@
 - any
 
 - JS has no integers or floats, all of them are inferred to as number
+- There's no much of a difference btn type alias and interfaces
