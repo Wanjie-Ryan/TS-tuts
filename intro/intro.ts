@@ -37,12 +37,26 @@ function getResult(value: number) {
 // TYPE ALIAS
 type User = {
   name: string;
-  email:string,
-  userId: number
-}
+  email: string;
+  userId: number;
+};
 
 // you can now use the User alias as a data type by itself
 
-function CreateUser (user:User){
-  
-}
+function CreateUser(user: User) {}
+
+// then when calling the function CreateUser pass in the User object
+CreateUser({ name: "John", email: "j@j.com", userId: 1 });
+
+// in case you don't want a variable in a type not to be changed, you use the readonly keyword, also when you want a value to be optional use the question mark (?)
+
+type Car = {
+  readonly model: string;
+  year: number;
+  color?: string;
+};
+
+// arrays
+const simpleString: string[] = [];
+const heroPower: Array<number> = [];
+simpleString.push("hello");
