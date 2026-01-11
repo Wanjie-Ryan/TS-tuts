@@ -60,3 +60,25 @@ type Car = {
 const simpleString: string[] = [];
 const heroPower: Array<number> = [];
 simpleString.push("hello");
+
+// unions, the variable record can hold a number or a string
+let record: number | string;
+
+record = "hello";
+record = 5;
+
+type Member = { 
+  role: string,
+  name: string
+}
+
+type Admin = {
+  name: string,
+  age : number
+}
+
+let staff : Member | Admin = {
+  name: "John Doe",
+  role: "Admin"
+}
+
