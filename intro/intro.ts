@@ -67,18 +67,20 @@ let record: number | string;
 record = "hello";
 record = 5;
 
-type Member = { 
-  role: string,
-  name: string
-}
+type Member = {
+  role: string;
+  name: string;
+};
 
 type Admin = {
-  name: string,
-  age : number
-}
+  name: string;
+  age: number;
+};
 
-let staff : Member | Admin = {
+let staff: Member | Admin = {
   name: "John Doe",
-  role: "Admin"
-}
+  role: "Admin",
+};
 
+// unions in arrays is quite different, there the array can now hold strings and numbers all together
+const data: (string | number)[] = [1, "2", 3];
