@@ -91,3 +91,24 @@ const singleTuple: [number, string] = [1, "2"];
 
 type Employee = [number, string];
 let newEmployee: Employee = [1, "2"];
+
+// Enums
+enum SeatChoice {
+  AISLE,
+  MIDDLE,
+  WINDOW,
+}
+
+const seat = SeatChoice.MIDDLE;
+
+// interfaces
+interface Point {
+  x: number;
+  y: string;
+  z?: number; // z in this case is optional
+}
+
+let ordinates: Point = {
+  x: 1,
+  y: "2",
+};
