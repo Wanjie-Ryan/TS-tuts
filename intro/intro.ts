@@ -102,13 +102,20 @@ enum SeatChoice {
 const seat = SeatChoice.MIDDLE;
 
 // interfaces
+// for an interface you can also use inheritance, and extend its properties
+// also for an interface after declaring it, you can re-open it and declare more properties
 interface Point {
   x: number;
   y: string;
   z?: number; // z in this case is optional
 }
 
+interface Point {
+  c: string;
+}
+
 let ordinates: Point = {
   x: 1,
   y: "2",
+  c: "3",
 };
