@@ -84,3 +84,10 @@ let staff: Member | Admin = {
 
 // unions in arrays is quite different, there the array can now hold strings and numbers all together
 const data: (string | number)[] = [1, "2", 3];
+
+// tuples
+// tuples are used when you want the array to follow a specific structure, like 0 should be integer, 1 should be string, like that.
+const singleTuple: [number, string] = [1, "2"];
+
+type Employee = [number, string];
+let newEmployee: Employee = [1, "2"];
