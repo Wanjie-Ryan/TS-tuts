@@ -7,6 +7,10 @@ class User {
     this.email = email;
     this.name = name;
   }
+
+  get getMail(): string {
+    return this.email;
+  }
 }
 
 let user = new User("j@j.com", "John Doe");
