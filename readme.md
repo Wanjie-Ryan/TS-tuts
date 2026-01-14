@@ -2,7 +2,7 @@
 
 1. Type Safety
 
-- once cannot really do 2 + "2". Adding a string to an integer.
+-- once cannot really do 2 + "2". Adding a string to an integer.
 
 2. Static Checking
 
