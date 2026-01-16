@@ -10,7 +10,7 @@
 
 3. Types
 
-- Number
+-- Number
 - string
 - boolean
 - null
