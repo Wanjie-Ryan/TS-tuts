@@ -4,7 +4,7 @@
 
 -- once cannot really do 2 + "2". Adding a string to an integer.
 
-2. Static Checking
+2.. Static Checking
 
 - Typescript checks types at compile time, catching errors before the code runs.
 
