@@ -11,7 +11,7 @@
 3. Types
 
 --- Number
-- string
+- string..
 - boolean
 - null
 - undefined
